@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Button Styles */
+.btn {
+  @apply bg-gray-800 text-white py-3 px-6 text-base rounded transition-transform transform duration-300 hover:scale-110 font-semibold;
+}
+
+.btn-large {
+  @apply py-6 px-10 text-lg font-bold bg-gray-600;
+}
+
+/* Header Styles */
+.header {
+  @apply text-5xl text-white font-extrabold fixed top-0 left-0 w-full pt-5;
+}
+
+/* Container Styles */
+.container {
+  @apply flex flex-col items-center justify-center h-full min-h-screen bg-black text-white text-center;
+}
+
+/* Form Container Styles */
+.form-container {
+  @apply w-full max-w-lg p-6 bg-gray-800 rounded-lg shadow-lg;
+}
+
+/* Form Header Styles */
+.header {
+  @apply text-2xl font-bold mb-4;
+}
+
+/* Input and Select Styles */
+.input,
+.select,
+.select-multiple,
+.dropdown,
+.dropdown-multiple {
+  @apply p-2 rounded bg-gray-700 text-white border border-gray-600 outline-none focus:border-gray-400;
+}
+
+/* Button Styles */
+.button {
+  @apply px-6 py-3 bg-gray-600 text-white font-semibold rounded-lg transition-transform transform hover:scale-105;
+}
+
+/* Checkbox Group Styles */
+.checkbox-group {
+  @apply flex flex-col gap-2;
+}
+
+.checkbox-header {
+  @apply text-lg font-bold mb-2;
+}
+
+.checkbox-label {
+  @apply flex items-center gap-2;
+}
+
+.checkbox {
+  @apply accent-gray-500; /* Tailwind's accent color for checkboxes */
+}
+
+.container {
+  @apply mx-auto px-4 py-6;
+}
+
+.form-container {
+  @apply bg-gray-800 text-white p-6 rounded-lg shadow-lg;
+}
+
+.input {
+  @apply border border-gray-300 rounded-lg p-2 w-full;
+}
+
+.dropdown {
+  @apply border border-gray-300 rounded-lg p-2 w-full;
+}
+
+.container {
+  @apply mx-auto px-4 py-6;
+}
+
+.form-container {
+  @apply bg-gray-800 text-white p-6 rounded-lg shadow-lg;
+}
+
+.input {
+  @apply border border-gray-300 rounded-lg p-2 w-full;
+}
+
+.dropdown {
+  @apply border border-gray-300 rounded-lg p-2 w-full;
+}
+
+.checkbox-group {
+  @apply mb-4;
+}
+
+.checkbox-label {
+  @apply flex items-center mb-2;
+}
+
+.checkbox-header {
+  @apply text-xl font-semibold;
+}
+
+.checkbox {
+  @apply mr-2;
+}
+
+.button-group {
+  @apply flex gap-4;
+}
+
+.button {
+  @apply py-2 px-4 rounded-lg text-white font-semibold;
+}
+
+.create-button {
+  @apply bg-green-500 hover:bg-green-600;
+}
+
+.edit-button {
+  @apply bg-blue-500 hover:bg-blue-600;
+}
