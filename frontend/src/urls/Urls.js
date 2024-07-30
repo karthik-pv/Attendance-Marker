@@ -11,3 +11,4 @@ export const editSubject = "subject/editSubject";
 export const createSubject = "subject/createSubject";
 export const getSubjectsForTeacher = "teacher/getSubjectsOfTeacher";
 export const getClassesForTeacher = "teacher/getClassesForTeacher";
+export const websocket = "ws://localhost:8080/socket";

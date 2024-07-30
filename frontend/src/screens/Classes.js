@@ -7,7 +7,6 @@ import {
   getAllClasses,
   getAllStudents,
 } from "../urls/Urls";
-import "../index.css";
 
 const Classes = () => {
   const [name, setName] = useState("");
@@ -95,15 +94,15 @@ const Classes = () => {
   };
 
   return (
-    <div className="container">
-      <div className="form-container">
+    <div className="flex flex-col items-center justify-center h-full min-h-screen bg-gray-900 text-white p-6">
+      <div className="w-full max-w-lg p-6 bg-gray-800 rounded-lg shadow-lg">
         <h2 className="text-black font-bold text-2xl mb-4">Add / Edit Class</h2>
         <form className="flex flex-col gap-4">
-          <div className="select-class-section mb-4">
+          <div className="mb-4">
             <select
               value={selectedClass}
               onChange={handleClassChange}
-              className="dropdown"
+              className="w-full py-3 px-4 border border-gray-600 rounded-md bg-gray-900 text-white"
             >
               <option value="">Select Existing Class</option>
               {classes.map((cls) => (
@@ -118,35 +117,37 @@ const Classes = () => {
             placeholder="Class Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="input"
+            className="w-full py-3 px-4 border border-gray-600 rounded-md bg-gray-900 text-white"
           />
-          <div className="checkbox-group">
-            <span className="checkbox-header">Select Students</span>
+          <div className="mb-4">
+            <span className="block text-white font-semibold mb-2">
+              Select Students
+            </span>
             {students.map(({ id, name }) => (
-              <label key={id} className="checkbox-label">
+              <label key={id} className="block text-white mb-2">
                 <input
                   type="checkbox"
                   value={id}
                   checked={selectedStudents.includes(id)}
                   onChange={() => handleStudentChange(id)}
-                  className="checkbox"
+                  className="mr-2"
                 />
                 {name}
               </label>
             ))}
           </div>
-          <div className="button-group justify-center">
+          <div className="flex justify-center gap-4">
             <button
               type="button"
               onClick={() => handleSubmit("create")}
-              className="button create-button"
+              className="py-3 px-6 bg-green-600 text-white font-semibold rounded-md transition-colors duration-300 hover:bg-green-700"
             >
               Create
             </button>
             <button
               type="button"
               onClick={() => handleSubmit("edit")}
-              className="button edit-button"
+              className="py-3 px-6 bg-blue-600 text-white font-semibold rounded-md transition-colors duration-300 hover:bg-blue-700"
             >
               Edit
             </button>

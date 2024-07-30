@@ -5,6 +5,8 @@ import Teachers from "./screens/Teachers";
 import Classes from "./screens/Classes";
 import Subjects from "./screens/Subjects";
 import Attendance from "./screens/Attendance";
+import SpeechTest from "./screens/speechTest";
+import getAttendance from "./screens/getAttendance";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/classes" element={<Classes />} />
         <Route path="/subjects" element={<Subjects />} />
         <Route path="/attendance" element={<Attendance />} />
+        <Route path="/speechTest" element={<SpeechTest />} />
+        <Route path="/getAttendance" element={<getAttendance />} />
       </Routes>
     </Router>
   );

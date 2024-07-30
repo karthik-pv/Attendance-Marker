@@ -1,12 +1,7 @@
 package com.attendance.attendance_marker.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinTable;
-import jakarta.persistence.ManyToMany;
 import lombok.*;
 
-import java.util.HashSet;
 import java.util.Set;
 
 @Data
